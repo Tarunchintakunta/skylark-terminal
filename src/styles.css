@@ -95,7 +95,7 @@ p { margin: 0; }
 .hero__line { position: absolute; left: 0; right: 0; bottom: 22%; width: 100%; height: 120px; pointer-events: none; overflow: visible; }
 .hero__line path { fill: none; stroke: var(--cold); stroke-width: 0.18; stroke-dasharray: 1 1; stroke-dashoffset: calc(1 - var(--line, 0)); filter: drop-shadow(0 0 6px rgba(95, 195, 180, 0.6)); }
 .hero__copy { position: absolute; left: var(--gutter); right: var(--gutter); bottom: clamp(48px, 10vh, 120px); max-width: 1100px; opacity: var(--copy, 1); }
-.hero__eyebrow { color: var(--cold); margin-bottom: 18px; }
+.hero__eyebrow { color: var(--cold); margin-bottom: 18px; text-shadow: 0 1px 14px rgba(7, 31, 38, 0.8); }
 .hero h1 { font-size: var(--fs-hero); line-height: 0.95; max-width: 12ch; }
 .hero h1 { color: var(--dim); }
 .hero h1 .w { display: inline-block; white-space: nowrap; }

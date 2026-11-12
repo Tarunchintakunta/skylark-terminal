@@ -79,7 +79,10 @@ function engine() {
       if (Math.abs(i - want) <= LRU / 2) decodeAround()
     }
   }
-  for (let k = 0; k < 4; k++) pump()
+  // after the page's own load, so the poster, fonts and app never queue behind 5 MB of frames
+  const start = () => { for (let k = 0; k < 4; k++) pump() }
+  if (document.readyState === 'complete') start()
+  else addEventListener('load', start, { once: true })
 
   function decodeAround() {
     if (!active) return

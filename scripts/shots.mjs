@@ -21,7 +21,7 @@ for (const [vpName, vp] of Object.entries(VIEWPORTS)) {
     const t0 = Date.now()
     await page.goto(base + path, { waitUntil: 'commit' })
     // legible = an h1 with text, visible, opacity 1, in the viewport
-    let legible = null
+    let legible = null, atLegible = null
     try {
       await page.waitForFunction(() => {
         const h = [...document.querySelectorAll('h1')].find((e) => e.textContent?.trim())
@@ -30,6 +30,7 @@ for (const [vpName, vp] of Object.entries(VIEWPORTS)) {
         return r.height > 0 && r.top < innerHeight && s.visibility !== 'hidden' && +s.opacity > 0.95
       }, null, { timeout: 15000, polling: 50 })
       legible = Date.now() - t0
+      atLegible = bytes
     } catch {}
     await page.waitForTimeout(2500)
     const initial = bytes
@@ -48,7 +49,7 @@ for (const [vpName, vp] of Object.entries(VIEWPORTS)) {
     await page.keyboard.press('End'); await page.waitForTimeout(400)
     await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight)); await page.waitForTimeout(300)
     await page.screenshot({ path: `${out}/${slug}-footer.jpg`, quality: 78 })
-    metrics.push({ path, viewport: vpName, legibleH1Ms: legible, initialMB: +(initial / 1e6).toFixed(2), fullScrollMB: +(bytes / 1e6).toFixed(2), requests: files, pageHeightPx: H })
+    metrics.push({ path, viewport: vpName, legibleH1Ms: legible, bytesAtLegibleMB: atLegible == null ? null : +(atLegible / 1e6).toFixed(2), initialMB: +(initial / 1e6).toFixed(2), fullScrollMB: +(bytes / 1e6).toFixed(2), requests: files, pageHeightPx: H })
     console.log(JSON.stringify(metrics.at(-1)))
     await ctx.close()
   }

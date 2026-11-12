@@ -1,0 +1,44 @@
+{
+  "/ slow": {
+    "frames": 695,
+    "avgFps": 44.3,
+    "p95FrameMs": 50,
+    "longTasks": 33,
+    "maxLongTaskMs": 224
+  },
+  "/ fast": {
+    "frames": 327,
+    "avgFps": 56.2,
+    "p95FrameMs": 16.8,
+    "longTasks": 1,
+    "maxLongTaskMs": 156
+  },
+  "/story#ocean slow": {
+    "frames": 25,
+    "avgFps": 60,
+    "p95FrameMs": 16.7,
+    "longTasks": 0,
+    "maxLongTaskMs": 0
+  },
+  "/story#ocean fast": {
+    "frames": 349,
+    "avgFps": 60,
+    "p95FrameMs": 16.7,
+    "longTasks": 0,
+    "maxLongTaskMs": 0
+  },
+  "/story#pond slow": {
+    "frames": 24,
+    "avgFps": 60,
+    "p95FrameMs": 16.7,
+    "longTasks": 0,
+    "maxLongTaskMs": 0
+  },
+  "/story#pond fast": {
+    "frames": 343,
+    "avgFps": 59.8,
+    "p95FrameMs": 16.8,
+    "longTasks": 0,
+    "maxLongTaskMs": 0
+  }
+}
