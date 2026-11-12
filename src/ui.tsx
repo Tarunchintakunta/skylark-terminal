@@ -11,14 +11,15 @@ const LINKS = [
 ]
 
 /** S0: full-width bar at the top, a floating pill once the page scrolls. The pill is solid, and every section keeps --clear of top padding. */
-export function Header() {
-  const [pill, setPill] = useState(false)
+/** `solid`: pages without a dark hero start as the pill, so the bar never sits ice-on-cream. */
+export function Header({ solid = false }: { solid?: boolean }) {
+  const [pill, setPill] = useState(solid)
   useEffect(() => {
-    const on = () => setPill(scrollY > 40)
+    const on = () => setPill(solid || scrollY > 40)
     on()
     addEventListener('scroll', on, { passive: true })
     return () => removeEventListener('scroll', on)
-  }, [])
+  }, [solid])
   return (
     <header className={`site-head${pill ? ' is-pill' : ''}`}>
       <div className="site-head__bar">

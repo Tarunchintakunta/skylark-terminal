@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/",
+    "viewport": "desktop",
+    "legibleH1Ms": 6377,
+    "bytesAtLegibleMB": 0.03,
+    "initialMB": 0.29,
+    "fullScrollMB": 1.06,
+    "requests": 35,
+    "pageHeightPx": 11032
+  },
+  {
+    "path": "/quote",
+    "viewport": "desktop",
+    "legibleH1Ms": 2371,
+    "bytesAtLegibleMB": 0.12,
+    "initialMB": 0.2,
+    "fullScrollMB": 0.2,
+    "requests": 10,
+    "pageHeightPx": 1685
+  },
+  {
+    "path": "/",
+    "viewport": "mobile",
+    "legibleH1Ms": 355,
+    "bytesAtLegibleMB": 0,
+    "initialMB": 0.05,
+    "fullScrollMB": 2.09,
+    "requests": 101,
+    "pageHeightPx": 15110
+  },
+  {
+    "path": "/quote",
+    "viewport": "mobile",
+    "legibleH1Ms": 343,
+    "bytesAtLegibleMB": 0.12,
+    "initialMB": 0.2,
+    "fullScrollMB": 0.2,
+    "requests": 10,
+    "pageHeightPx": 2506
+  }
+]

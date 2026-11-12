@@ -69,7 +69,7 @@ export function Products() {
               <li key={p.name}>
                 <picture>
                   <source type="image/avif" srcSet={productSrc(p.image, 'avif')} sizes="(max-width: 600px) 45vw, 200px" />
-                  <img src={`/media/${p.image}_480.webp`} srcSet={productSrc(p.image, 'webp')} sizes="(max-width: 600px) 45vw, 200px" width="480" height="480" loading="lazy" decoding="async" alt={p.name} />
+                  <img src={`/media/${p.image}_480.webp`} srcSet={productSrc(p.image, 'webp')} sizes="(max-width: 600px) 45vw, 200px" width="480" height="480" loading="lazy" decoding="async" alt="" />
                 </picture>
                 <b>{p.name}</b>
                 {p.latin && <i>{p.latin}</i>}

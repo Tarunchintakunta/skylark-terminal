@@ -1,22 +1,19 @@
 import './styles.css'
-import { StrictMode, lazy, Suspense } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { CONTACT } from './config/content'
+import RfqForm from './RfqForm'
 import { Footer, Header } from './ui'
-
-const RfqForm = lazy(() => import('./RfqForm'))
 
 function Quote() {
   return (
     <>
-      <Header />
+      <Header solid />
       <main id="main" className="page">
         <p className="mono sec__num">Quote</p>
         <h1>Request an export quote</h1>
         <div className="quote-layout">
-          <Suspense fallback={<p>Loading the form…</p>}>
-            <RfqForm />
-          </Suspense>
+          <RfqForm />
           <aside className="quote-aside" aria-label="Office">
             <h2>Office</h2>
             <p>{CONTACT.office}</p>
