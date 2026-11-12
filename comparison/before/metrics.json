@@ -1,0 +1,74 @@
+[
+  {
+    "path": "/",
+    "viewport": "desktop",
+    "legibleH1Ms": 2641,
+    "initialMB": 0.67,
+    "fullScrollMB": 2.81,
+    "requests": 42,
+    "pageHeightPx": 8700
+  },
+  {
+    "path": "/story#ocean",
+    "viewport": "desktop",
+    "legibleH1Ms": 3321,
+    "initialMB": 1.6,
+    "fullScrollMB": 6.07,
+    "requests": 39,
+    "pageHeightPx": 22441
+  },
+  {
+    "path": "/story#pond",
+    "viewport": "desktop",
+    "legibleH1Ms": 1873,
+    "initialMB": 1.03,
+    "fullScrollMB": 4.67,
+    "requests": 34,
+    "pageHeightPx": 21718
+  },
+  {
+    "path": "/quote",
+    "viewport": "desktop",
+    "legibleH1Ms": 734,
+    "initialMB": 0.25,
+    "fullScrollMB": 0.25,
+    "requests": 15,
+    "pageHeightPx": 1259
+  },
+  {
+    "path": "/",
+    "viewport": "mobile",
+    "legibleH1Ms": 731,
+    "initialMB": 0.7,
+    "fullScrollMB": 2.03,
+    "requests": 40,
+    "pageHeightPx": 9839
+  },
+  {
+    "path": "/story#ocean",
+    "viewport": "mobile",
+    "legibleH1Ms": 1248,
+    "initialMB": 0.43,
+    "fullScrollMB": 0.92,
+    "requests": 18,
+    "pageHeightPx": 844
+  },
+  {
+    "path": "/story#pond",
+    "viewport": "mobile",
+    "legibleH1Ms": 799,
+    "initialMB": 2.78,
+    "fullScrollMB": 10.59,
+    "requests": 82,
+    "pageHeightPx": 18961
+  },
+  {
+    "path": "/quote",
+    "viewport": "mobile",
+    "legibleH1Ms": 1383,
+    "initialMB": 0.25,
+    "fullScrollMB": 0.25,
+    "requests": 15,
+    "pageHeightPx": 1933
+  }
+]

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#071f26" />
+<title>Skylark Exim | Seafood exporters from Visakhapatnam</title>
+<meta name="description" content="Skylark Exim, Visakhapatnam: premium raw fresh, chilled and frozen seafood, with a fully integrated value chain from sourcing to delivery. Marine fish and shrimps for 15 markets." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Skylark Exim" />
+<meta property="og:title" content="Skylark Exim | From Visakhapatnam to the world" />
+<meta property="og:image" content="/hero/d_000.webp" />
+<link rel="icon" href="/favicon-48.webp" type="image/webp" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preload" href="/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/inter-tight-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" as="image" href="/hero/m_000.webp" media="(max-width: 768px) and (orientation: portrait)" fetchpriority="high" />
+<link rel="preload" as="image" href="/hero/d_000.webp" media="not ((max-width: 768px) and (orientation: portrait))" fetchpriority="high" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="head"></div>
+<!-- S1 hero: static markup, so the poster and the headline paint before any script runs. src/hero.ts drives it. -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero__pin">
+    <picture>
+      <source media="(max-width: 768px) and (orientation: portrait)" srcset="/hero/m_000.webp" />
+      <img class="hero__poster" src="/hero/d_000.webp" width="1280" height="720" fetchpriority="high" alt="Before dawn, a white and blue fishing boat lies at a stone quay, its mast lamp and wheelhouse windows glowing amber." />
+    </picture>
+    <canvas class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <svg class="hero__line" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 7 C 20 7, 30 3, 50 4 S 80 8, 100 5" /></svg>
+    <div class="hero__copy">
+      <p class="hero__eyebrow mono">Visakhapatnam · Andhra Pradesh</p>
+      <h1 id="hero-title">From Visakhapatnam to the world.</h1>
+      <p class="hero__sub">Premium raw fresh, chilled and frozen seafood, with a fully integrated value chain from sourcing to delivery.</p>
+    </div>
+    <div class="hero__twin" aria-hidden="true">
+      <p class="note mono">Every batch has a history.</p>
+      <span class="chip mono"><b>Batch</b> Product / Size / Batch / Export compliance</span>
+      <span class="chip mono"><b>Cold store</b> −18&nbsp;°C to −20&nbsp;°C</span>
+      <span class="chip mono"><b>Compliance</b> HACCP · EU · FDA</span>
+    </div>
+    <p class="hero__cue mono">Scroll to explore</p>
+    <p class="hero__load mono" aria-hidden="true"></p>
+  </div>
+</section>
+<div id="app"></div>
+<script type="module" src="/src/home.tsx"></script>
+</body>
+</html>
