@@ -1,4 +1,5 @@
 import './styles.css'
+import './hero'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { Footer, Header } from './ui'
