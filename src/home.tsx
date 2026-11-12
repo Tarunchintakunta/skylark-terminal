@@ -2,6 +2,7 @@ import './styles.css'
 import './hero'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { Faq, Markets, Problems, Products, Trust } from './sections'
 import { Footer, Header } from './ui'
 import { ScrollTrigger, lenis } from './scroll'
 
@@ -9,6 +10,11 @@ function Home() {
   return (
     <>
       <main id="main" className="light" tabIndex={-1}>
+        <Markets />
+        <Problems />
+        <Products />
+        <Trust />
+        <Faq />
       </main>
       <Footer />
     </>
