@@ -1,0 +1,19 @@
+{"url":"https://skylark-terminal-three.vercel.app/","mobile":false,"first":{"ms":1379,"poster":false},"repeat":{"ms":647,"poster":true}}
+{"url":"https://skylark-terminal-three.vercel.app/","mobile":true,"first":{"ms":1905,"poster":false},"repeat":{"ms":2081,"poster":true}}
+{"url":"https://skylark-exim-v3.vercel.app/","mobile":false,"first":{"ms":7512,"poster":true},"repeat":{"ms":1070,"poster":true}}
+{"url":"https://skylark-exim-v3.vercel.app/","mobile":true,"first":{"ms":2314,"poster":true},"repeat":{"ms":8444,"poster":true}}
+{"url":"https://skylark-exim-v3.vercel.app/story#ocean","mobile":false,"first":{"ms":5899,"poster":true},"repeat":{"ms":23,"poster":true}}
+{"url":"https://skylark-exim-v3.vercel.app/story#ocean","mobile":true,"first":{"ms":19865,"poster":true},"repeat":{"ms":9,"poster":true}}
+{"url":"https://skylark-exim-v3.vercel.app/story#pond","mobile":false,"first":{"ms":4107,"poster":true},"repeat":{"ms":18,"poster":true}}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 20000ms exceeded.
+    at legible (/Users/tarunchintakunta/Desktop/skylark/skylark-terminal/scripts/repeat-legible.mjs:10:11)
+    at async file:///Users/tarunchintakunta/Desktop/skylark/skylark-terminal/scripts/repeat-legible.mjs:14:15 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v25.9.0

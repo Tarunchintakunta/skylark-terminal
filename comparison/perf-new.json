@@ -1,7 +1,7 @@
 {
   "/ slow": {
-    "frames": 999,
-    "avgFps": 59.6,
+    "frames": 1013,
+    "avgFps": 59.3,
     "p95FrameMs": 16.8,
     "longTasks": 0,
     "maxLongTaskMs": 0
@@ -9,7 +9,7 @@
   "/ fast": {
     "frames": 343,
     "avgFps": 60,
-    "p95FrameMs": 16.8,
+    "p95FrameMs": 16.7,
     "longTasks": 0,
     "maxLongTaskMs": 0
   }

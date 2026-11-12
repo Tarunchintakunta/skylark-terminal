@@ -424,5 +424,5 @@ Old site for comparison: 2,393 files under `public/media` alone (1.2 GB in the w
 | `/media/prod-vannamei_960.avif` | prod-vannamei product still (source public/media) | 67,046 |
 | `/media/prod-vannamei_960.webp` | prod-vannamei product still (source public/media) | 105,416 |
 | `/order.html` | site file (source public/ or new) | 24,645 |
-| `/robots.txt` | site file (source public/ or new) | 69 |
+| `/robots.txt` | site file (source public/ or new) | 23 |
 | `/textures/earth_day_2048.webp` | globe albedo (source public/textures) | 95,860 |

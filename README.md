@@ -10,7 +10,7 @@ npm ci
 npm run dev          # http://localhost:5174
 npm run typecheck && npm run build
 npm run preview      # http://localhost:4174
-npm run test:unit    # shipment calculator (node --test)
+npm run test:unit    # shipment calculator (tsx --test)
 BASE_URL=http://localhost:4174 npx playwright test              # site gates + scroll perf
 BASE_URL=https://… PERF_PATHS=/ npx playwright test tests/scroll-perf.spec.ts
 node scripts/shots.mjs <base> <outDir> "/,/quote"               # screenshots + transfer metrics
@@ -37,7 +37,7 @@ them, the quote form opens a pre-filled `mailto:info@skylarkexim.com`.
 - The `<video>` decoder pool with seek queues (`src/film/scrub.ts`, 605 lines), `warmcache.ts`, `engine/ticker.ts`:
   replaced by one canvas and decoded stills.
 - Four animation systems (Lenis + GSAP + Motion + custom rAF ticker): Lenis + GSAP only. No `motion`, no R3F/Drei.
-- 2,393-file media tree (5 sizes × 3 codecs): 410 shipped files, 16.4 MB (`MEDIA.md`).
+- 2,350-file media tree (5 sizes × 3 codecs, 1.2 GB): 410 shipped files, 16.4 MB (`MEDIA.md`).
 
 ## Changing a shipped asset
 `/media`, `/hero` and `/textures` are cached immutably and their file names have no hash. A changed file needs a new
