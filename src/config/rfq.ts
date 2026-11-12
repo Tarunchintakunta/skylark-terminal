@@ -1,6 +1,6 @@
 import { z } from 'zod'
-import { MARINE_FISH, SHRIMPS, STATES } from './content'
-import { SHRIMP_FORMS } from './products'
+import { MARINE_FISH, SHRIMPS, STATES } from './content.js'
+import { SHRIMP_FORMS } from './products.js'
 
 /** One schema for the form (client) and api/rfq.ts (server). TRD §12. */
 export const rfqSchema = z.object({

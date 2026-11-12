@@ -1,4 +1,4 @@
-import { RFQ_TO, rfqSchema, rfqSubject, rfqSummary } from '../src/config/rfq'
+import { RFQ_TO, rfqSchema, rfqSubject, rfqSummary } from '../src/config/rfq.js'
 
 /**
  * RFQ endpoint (TRD §12). Sends through Resend only when RESEND_API_KEY is set; otherwise tells the client to

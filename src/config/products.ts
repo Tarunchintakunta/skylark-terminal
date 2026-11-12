@@ -1,6 +1,6 @@
 /** files in public/media; plain names, see MEDIA.md */
 const mediaUrl = (file: string) => `/media/${file}`
-import { MARINE_FISH, SHRIMPS, STATES } from './content'
+import { MARINE_FISH, SHRIMPS, STATES } from './content.js'
 
 // docs/CONTENT.md "Products". No sizes, counts, MOQ or prices anywhere.
 export type Category = 'marine' | 'shrimps'

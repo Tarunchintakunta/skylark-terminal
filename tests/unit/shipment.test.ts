@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { REEFER_PAYLOAD_MT, clampQty, planShipment, type ShipmentInput } from '../../src/config/shipment.ts'
+import { REEFER_PAYLOAD_MT, clampQty, planShipment, type ShipmentInput } from '../../src/config/shipment.js'
 
 const base: ShipmentInput = { category: 'shrimps', product: 'Vannamei', form: 'Easy Peel', quantityMt: 20, market: 'Japan', state: 'Frozen' }
 

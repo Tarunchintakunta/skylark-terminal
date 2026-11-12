@@ -1,6 +1,6 @@
 // Shipment builder arithmetic (S5). One pure function; everything it returns is labelled "Indicative — confirmed on quote."
 // No prices, freight rates or transit times: none are in docs/CONTENT.md, so none are invented here.
-import { DOC_CARDS, LABEL_FIELDS } from './content.ts'
+import { DOC_CARDS, LABEL_FIELDS } from './content.js'
 
 // indicative planning figure — verify with operations before production use
 export const REEFER_PAYLOAD_MT = 25
