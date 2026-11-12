@@ -2,6 +2,7 @@ import './styles.css'
 import './hero'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { Builder } from './Builder'
 import { Chain } from './Chain'
 import { Faq, Markets, Problems, Products, Trust } from './sections'
 import { Footer, Header } from './ui'
@@ -14,6 +15,7 @@ function Home() {
         <Markets />
         <Problems />
         <Chain />
+        <Builder />
         <Products />
         <Trust />
         <Faq />
